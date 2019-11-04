@@ -6,13 +6,13 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 18:51:34 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/04 18:58:17 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/04 19:03:05 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_TYPEDEF_H
 # define LIBFT_TYPEDEF_H
 
-typedef	unsigned long		t_sizre;
+typedef	unsigned long		size_t;
 
 #endif
