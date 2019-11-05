@@ -6,11 +6,11 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 16:06:14 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/05 16:10:06 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/05 17:48:29 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include  "libft.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

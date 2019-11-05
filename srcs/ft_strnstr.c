@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 16:43:04 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/05 17:08:19 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/05 17:49:28 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 				j++;
 			if (needle[j] == '\0')
 				return ((char*)haystack + i);
-		}	
+		}
 		i++;
 	}
 	return (0);
