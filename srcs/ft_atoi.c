@@ -30,18 +30,27 @@ int		get_isnb(const char c)
 int		ft_atoi(const char *str)
 {
 	int		i;
-	long	n;
+	int		ntmp;
+	unsigned long	n;
+	unsigned long	limit;
 	int		mult;
 
 	n = 0;
 	i = 0;
+	limit = (unsigned long)(FT_MAX_L / 10);
 	mult = 1;
 	while (get_isspace(str[i]))
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 		if (str[i++] == '-')
 			mult = -1;
-	while (get_isnb(str[i]) != -1)
-		n = n * 10 + get_isnb(str[i++]);
+	while ((ntmp = get_isnb(str[i++])) != -1)
+	{
+		if (mult == 1 && (n > limit || (n == limit && ntmp > 7)))
+			return (-1);
+		else if (mult == -1 && (n > limit || (n == limit && ntmp > 8)))
+			return (0);
+		n = n * 10 + ntmp;
+	}
 	return (n * mult);
 }
