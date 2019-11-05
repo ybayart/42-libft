@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_ft_memset.c                                   :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/04 13:43:08 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/04 15:38:29 by ybayart          ###   ########.fr       */
+/*   Created: 2019/11/04 19:50:30 by ybayart           #+#    #+#             */
+/*   Updated: 2019/11/04 21:21:53 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void	*ft_bzero(void *s, unsigned long n);
-
-int	main(void)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char		b[26];
-	int		c;
-	unsigned long	n;
-	int		i;
+	size_t			i;
+	unsigned char		*ptr;
+	const unsigned char	*ptr2;
 
-	c = 'h';
-	n = 2;
-	ft_bzero(b, n);
-	printf("%s", b);
+	ptr = (unsigned char*)dst;
+	ptr2 = (unsigned char*)src;
+	i = 0;
+	if (ptr2 < ptr)
+		while (++i <= len)
+			ptr[len - i] = ptr2[len - i];
+	else
+		while (len-- > 0)
+			*(ptr++) = *(ptr2++);
+	return (dst);
 }
