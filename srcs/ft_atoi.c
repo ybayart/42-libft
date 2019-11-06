@@ -6,7 +6,7 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/16 18:46:25 by exam              #+#    #+#             */
-/*   Updated: 2019/11/05 20:37:13 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/06 15:09:41 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ int		get_isnb(const char c)
 
 int		ft_atoi(const char *str)
 {
-	int		i;
-	int		ntmp;
+	int				i;
+	int				ntmp;
 	unsigned long	n;
 	unsigned long	limit;
-	int		mult;
+	int				mult;
 
 	n = 0;
 	i = 0;
