@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/06 03:05:58 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/05 16:26:18 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/06 22:29:55 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t i;
 	size_t res;
 
+	if (src == NULL)
+		return ((size_t)NULL);
 	i = 0;
 	res = 0;
 	while (src[res])

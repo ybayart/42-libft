@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 15:08:20 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/06 15:23:38 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/06 22:27:27 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	size_t	j;
 	char	*dst;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	size = ft_strlen(s1) + ft_strlen(s2) + 1;
 	if ((dst = ft_calloc(sizeof(char), size)) == NULL)
 		return (NULL);

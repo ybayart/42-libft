@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 18:12:35 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/06 18:14:22 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/06 22:31:55 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (s == NULL)
+		return ((void)NULL);
 	while (*s)
 		write(fd, s++, 1);
 	write(fd, "\n", 1);

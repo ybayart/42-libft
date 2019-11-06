@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/13 02:12:26 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/06 17:13:36 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/06 22:25:52 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,8 @@ char	**ft_split(const char *s, char c)
 	char	*str;
 	int		words;
 
+	if (s == NULL)
+		return (NULL);
 	str = (char*)s;
 	words = count_words(str, c);
 	if ((res = (char**)malloc(sizeof(char*) * (words + 1))) == NULL)

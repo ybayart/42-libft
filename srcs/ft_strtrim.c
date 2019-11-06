@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 15:26:09 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/06 16:40:15 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/06 22:23:49 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	len;
 	char	*dst;
 
+	if (s1 == NULL)
+		return (NULL);
 	i = 0;
 	len = ft_strlen(s1);
 	while (ischar(*(s1 + i), set))
