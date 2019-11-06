@@ -10,11 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	init_len;
 	char	*dst;
-	int	i;
+	size_t	i;
 
 	init_len = ft_strlen(s);
 	if (init_len < start)
