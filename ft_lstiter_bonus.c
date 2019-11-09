@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/06 20:44:36 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/08 13:33:36 by ybayart          ###   ########.fr       */
+/*   Created: 2019/11/09 19:36:53 by ybayart           #+#    #+#             */
+/*   Updated: 2019/11/09 19:39:53 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_lstiter(t_list *lst, void (*f)(void*))
 {
-	if (lst == NULL)
-		return (NULL);
-	while (lst->next != NULL)
-		lst = lst->next;
-	return (lst);
+	if (lst)
+		while (lst)
+		{
+			(*f)(lst->content);
+			lst = lst->next;
+		}	
 }
