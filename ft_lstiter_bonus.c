@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/09 19:36:53 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/09 19:43:24 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/09 23:03:58 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ void	ft_lstiter(t_list *lst, void (*f)(void*))
 		{
 			(*f)(lst->content);
 			lst = lst->next;
-		}	
+		}
 }
