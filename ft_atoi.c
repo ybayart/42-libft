@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		get_isspace(const char c)
+static int	get_isspace(const char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n' ||
 			c == '\v' || c == '\f' || c == '\r')
@@ -20,14 +20,14 @@ int		get_isspace(const char c)
 	return (0);
 }
 
-int		get_isnb(const char c)
+static int	get_isnb(const char c)
 {
 	if (c >= '0' && c <= '9')
 		return (c - '0');
 	return (-1);
 }
 
-int		ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int				i;
 	int				ntmp;

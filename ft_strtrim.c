@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		ischar(char c, const char *set)
+static int	ischar(char c, const char *set)
 {
 	size_t	i;
 
@@ -23,7 +23,7 @@ int		ischar(char c, const char *set)
 	return (0);
 }
 
-char	*trimming(const char *s1, const char *set, size_t *k, size_t i)
+static char	*trimming(const char *s1, const char *set, size_t *k, size_t i)
 {
 	size_t	j;
 	size_t	len;

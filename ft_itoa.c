@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		ft_nbrlen(long n)
+static int	ft_nbrlen(long n)
 {
 	int		i;
 
@@ -30,7 +30,7 @@ int		ft_nbrlen(long n)
 	return (i);
 }
 
-void	ft_putnbr_stock(long n, char *str, int *i)
+static void	ft_putnbr_stock(long n, char *str, int *i)
 {
 	if (n > 9)
 	{
@@ -41,7 +41,7 @@ void	ft_putnbr_stock(long n, char *str, int *i)
 		str[(*i)++] = n + '0';
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*str;
 	int		i;
