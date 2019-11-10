@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 16:41:48 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/10 15:15:43 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/10 23:16:44 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 # include "libft_typedef.h"
 
 # define FT_MAX_UI      (unsigned int)(~0L)
