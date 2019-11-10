@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/13 02:12:26 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/09 09:26:14 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/10 22:48:40 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ static void	*write_split(char **split, char *str, char sep)
 	return ((void*)1);
 }
 
-char	**ft_split(const char *s, char c)
+char		**ft_split(const char *s, char c)
 {
 	char	**res;
 	char	*str;

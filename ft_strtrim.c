@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 15:26:09 by ybayart           #+#    #+#             */
-/*   Updated: 2019/11/06 22:23:49 by ybayart          ###   ########.fr       */
+/*   Updated: 2019/11/10 22:48:51 by ybayart          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	*trimming(const char *s1, const char *set, size_t *k, size_t i)
 	return (dst);
 }
 
-char	*ft_strtrim(const char *s1, const char *set)
+char		*ft_strtrim(const char *s1, const char *set)
 {
 	size_t	i;
 	size_t	k;
